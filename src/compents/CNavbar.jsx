@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react'
-
+import './css/CNavbar.css'
 const CNavbar = () => {
   return (
     <div className='navbar'>
