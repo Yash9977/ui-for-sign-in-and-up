@@ -9,12 +9,10 @@ const Sign_in = () => {
   
     return (
     <div>
-      <div>
-       <CNavbar />
-       </div>
-       <div>
+      
+       
        <Form_email/>
-       </div>
+       
        <div className='submit'>
        <Submit/>
        </div>
