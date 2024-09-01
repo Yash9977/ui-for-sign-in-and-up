@@ -6,7 +6,8 @@ import  '../compents/css/submit.css'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup'; 
 import Alert from 'react-bootstrap/Alert';
- 
+import { Link } from "react-router-dom"; 
+
 const Sign_up = () => {
    return (
      <div>
@@ -27,7 +28,7 @@ const Sign_up = () => {
       ].map((variant) => (
         <Alert key={variant} variant={variant}>
           
-          <Alert.Link href="http://localhost:5173/sign_in">sign in</Alert.Link>
+          <Link to="http://localhost:5173/sign_in">sign in</Link>
          
         </Alert>
       ))}
