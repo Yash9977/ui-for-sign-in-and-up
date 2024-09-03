@@ -8,14 +8,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 
 const Sign_in = () => {
-  var getapi =async() =>{
-    const url = "http://127.0.0.1:8000/student/"  
-   const req = await axios.get(url) 
-   console.log(req)
-  }
-   useEffect(() =>{
-     getapi()
-   },[])
+  
     return (
     <div>
       
@@ -31,9 +24,7 @@ const Sign_in = () => {
          
         </Alert>
       ))}
-       <div className='submit'>
-       <Submit/>
-       </div>
+       
     </div>
   )
 }

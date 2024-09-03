@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import CNavbar from '../compents/CNavbar';
 import Form_email from '../compents/Form_email';
 import Submit from '../compents/Submit';
@@ -7,9 +7,18 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup'; 
 import Alert from 'react-bootstrap/Alert';
 import { Link } from "react-router-dom"; 
+import axios from 'axios';
 
 const Sign_up = () => {
-   return (
+  var getapi =async() =>{
+    const url = "http://127.0.0.1:8000/Generics_View/"  
+   const req = await axios.get(url) 
+   console.log(req.data)
+  }
+   useEffect(() =>{
+     getapi()
+   },[]) 
+  return (
      <div>
        
        <div>
@@ -34,9 +43,7 @@ const Sign_up = () => {
       ))}
      </>
        </div>
-       <div className='submit'>
-       <Submit/>
-       </div>
+       
      </div>
    )
  }
